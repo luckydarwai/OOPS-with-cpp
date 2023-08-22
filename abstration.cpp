@@ -5,10 +5,11 @@ class AbstractEmployee{
     virtual void askForIncreaceSalary()=0; //Pure Virtual Function
 };
 class Employee:AbstractEmployee{
-    public:
+    private:
     string name;
     string company;
     int age;
+    public:
 
     Employee(string Name,string Company,int Age){
            name=Name;
